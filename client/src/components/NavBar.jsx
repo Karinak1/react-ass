@@ -5,11 +5,8 @@ export default function NavBar() {
     <div>
       <Link to="/"> Home </Link>
       <br />
-      <Link to={'/wines'}>Wines</Link>
+      <Link to={'/form'}>Wines</Link>
       <br />
-      <Link to={'/vineyards'}>Vineyards</Link>
-      <br />
-      <Link to={'/about'}>About</Link>
     </div>
   );
 }

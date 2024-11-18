@@ -10,11 +10,11 @@ dotenv.config();
 
 const db = new pg.Pool({ connectionString: process.env.DATABASE_URL });
 
-app.get('/', function (request, response) {
-  response.json('You are looking at my route route. How roude!');
-});
+// app.get('/', function (request, response) {
+//   response.json('You are looking at my route route. How roude!');
+// });
 
-app.get('/wines', async function (request, response) {
+app.get('/', async function (request, response) {
   const result = await db.query(`
 SELECT 
 wines.id,

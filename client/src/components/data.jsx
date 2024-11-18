@@ -5,7 +5,7 @@ export default function App() {
 
   useEffect(() => {
     async function getWine() {
-      const response = await fetch('http://localhost:8080/wines');
+      const response = await fetch('http://localhost:8080');
       const data = await response.json();
       setWine(data);
       // console.log(data);

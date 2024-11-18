@@ -1,6 +1,5 @@
 import { Route, Routes, Link } from 'react-router-dom';
 import NavBar from './components/NavBar';
-
 import KRoutes from './KRoutes';
 // import Data from './components/data';
 // import Images from './images/img';

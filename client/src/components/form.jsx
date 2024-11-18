@@ -9,6 +9,7 @@ export default function Form() {
   function handleSubmit(event) {
     event.preventDefault();
     console.log(form);
+    setForm({ name: '', type: '' });
   }
 
   function handleChange(event) {
@@ -19,11 +20,21 @@ export default function Form() {
       <h2>What kind of wine do you drink</h2>
       <form onSubmit={handleSubmit}>
         <label>Name</label>
-        <input name="name" placeholder="Name " onChange={handleChange} />
+        <input
+          name="name"
+          placeholder="Name "
+          onChange={handleChange}
+          value={form.name}
+        />
         <label></label>
-        <label>Type</label>
+        <label>Wine Type</label>
 
-        <input name="type" placeholder="type" onChange={handleChange} />
+        <input
+          name="type"
+          placeholder="type"
+          onChange={handleChange}
+          value={form.type}
+        />
         {/* <label>Country</label>
 
         <input placeholder="Country" /> */}
